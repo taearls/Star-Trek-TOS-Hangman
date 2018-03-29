@@ -105,7 +105,7 @@ const game = {
 				// wrongLetters will still be an array after storing the string
 				// as a variable using .join(); doesn't transform array
 				wrongLetterString = this.wrongLetters.join(" ");
-				$("#wrong-letters").text(wrongLetterString);
+				$("#wrong-letters").text("Used Letters: " + wrongLetterString);
 				this.wrongAnswer();
 			}
 		}
@@ -141,7 +141,7 @@ const game = {
 		this.wrongLetters = [];
 		this.playerLives = 6;
 		$("#message").css("visibility", "hidden");
-		$("#wrong-letters").text("");
+		$("#wrong-letters").text("Used Letters: ");
 		this.shufflePhrase();
 	},
 	win () {
@@ -152,6 +152,7 @@ const game = {
 		})
 	}
 }
+
 // button & input functionality
 $("#guess").on("click", function(event) {
 	$("#message").css("visibility", "hidden")

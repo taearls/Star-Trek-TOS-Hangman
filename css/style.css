@@ -7,20 +7,23 @@ body * {
 	color: yellow;
 }
 
-/*.game-container {
+.game-container {
 	display: flex;
-}*/
+	justify-content: flex-start;
+}
 #title {
 	text-align: center;
 	font-size: 50px;
 }
 #wrong-letters {
-	position: absolute;
-	font-size: 20px;
-	left: 10vw;
+/*	position: absolute;
+*/	font-size: 20px;
+/*	top: 35vh;
+*/	/*left: 1vw;*/
 }
 #score, #lives {
 	font-size: 20px;
+	margin-right: 2vw;
 }
 /*canvas {
 	display: block;
