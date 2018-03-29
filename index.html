@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Star Trek TOS Hangman</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<h1 id="title">Star Trek TOS Hangman</h1>
+
+	<div class="game-container">
+		<h1 id="phrase"></h1>
+		<div id="wrong-letters"></div>
+		<div id="score">Score: 0</div>
+		<div id="lives">Lives: 6</div> 
+	</div>
+<!-- once I add in an image for a hang man body part -->
+<!-- 	<canvas id="my-canvas" width="800" height="400"></canvas>
+ -->
+	<div class="interactive">
+		<input type="text" placeholder="Choose a letter">
+		<button id="guess">Submit</button>
+		<button id="reset-game">Shuffle</button>
+		<h2 id="message">Game over. Click anywhere to reset!</h2>
+	</div>
+
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

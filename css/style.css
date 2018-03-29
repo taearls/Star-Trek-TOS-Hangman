@@ -1,0 +1,51 @@
+body {
+	background-color: black;
+	background-image: url(../images/starry_sky.jpg);
+}
+body * {
+	font-family: 'Oswald', sans-serif;
+	color: yellow;
+}
+
+/*.game-container {
+	display: flex;
+}*/
+#title {
+	text-align: center;
+	font-size: 50px;
+}
+#wrong-letters {
+	position: absolute;
+	font-size: 20px;
+	left: 10vw;
+}
+#score, #lives {
+	font-size: 20px;
+}
+/*canvas {
+	display: block;
+	background-color: white;
+	margin-bottom: 10px;
+}*/
+#phrase {
+	font-size: 30px;
+}
+
+.interactive {
+/*	display: flex;
+*/	
+	justify-content: space-evenly;
+}
+input, button {
+	font-size: 22px;
+	color: black;
+}
+button:hover {
+	background-color: firebrick;
+	cursor: pointer;
+}
+#message {
+	font-size: 20px;
+	visibility: hidden;
+	display: inline-block;
+}
