@@ -1,3 +1,8 @@
+// TO DO: 
+
+// generate hangman images and update depending on lives remaining
+// make it all look pretty
+
 // initialize a class for words
 class Words {
 	constructor(phrase) {
@@ -46,7 +51,6 @@ const game = {
 		}	
 		const newArr = phrase.split("");
 		
-		console.log(newArr);
 			for (let i = 0; i < newArr.length; i++) {
 				// newArr[i] += " ";
 
@@ -234,9 +238,3 @@ const findAllIndex = (string, character) => {
 
 
 game.reset();
-console.log(game.currentAnswer);
-// TO DO: 
-
-// create spaces between separate words using li elements
-// generate hangman images
-// make it all look pretty
