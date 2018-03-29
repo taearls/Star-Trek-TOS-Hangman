@@ -38,8 +38,19 @@ const game = {
 		let space = " ";
 		// [james, tiberius, kirk]
 		for (let i = 0; i < phrase.length; i++) {
-			space += phrase.charAt(i) + " ";
+			space += phrase.charAt(i) + "  ";
 		}	
+		// const newArr = phrase.split("");
+		
+		// console.log(newArr);
+		// 	for (let i = 0; i < newArr.length; i++) {
+		// 		newArr[i] += " ";
+
+		// 		// $("<p>").text(newArr[i]).attr("id", "p-" + i).appendTo($("#phrase"))
+		// 		// $("p-" + i)
+		// 	}
+		// 	spaceArr = newArr.join("");
+		// 	console.log(spaceArr);
 		$("#phrase").text(space);
 	},
 	genBlanks (phrase) {
@@ -123,8 +134,9 @@ const game = {
 	reset () {
 		// hide hangman from display if necessary
 		$(document).off("click");
-		$("#message").css("visibility", "hidden");
 		this.wrongLetters = [];
+		this.playerLives = 6;
+		$("#message").css("visibility", "hidden");
 		$("#wrong-letters").text("");
 		this.shufflePhrase();
 	},
