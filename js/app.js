@@ -37,21 +37,25 @@ const game = {
 	displaySpace (phrase) {
 		let space = " ";
 		// [james, tiberius, kirk]
+		// have to clear out paragraphs again so dupes don't get made
+		if ($("#p-0")) {
+			$("#phrase").text("");
+		}
 		for (let i = 0; i < phrase.length; i++) {
 			space += phrase.charAt(i) + "  ";
 		}	
-		// const newArr = phrase.split("");
+		const newArr = phrase.split("");
 		
-		// console.log(newArr);
-		// 	for (let i = 0; i < newArr.length; i++) {
-		// 		newArr[i] += " ";
+		console.log(newArr);
+			for (let i = 0; i < newArr.length; i++) {
+				// newArr[i] += " ";
 
-		// 		// $("<p>").text(newArr[i]).attr("id", "p-" + i).appendTo($("#phrase"))
-		// 		// $("p-" + i)
-		// 	}
-		// 	spaceArr = newArr.join("");
-		// 	console.log(spaceArr);
-		$("#phrase").text(space);
+				$("<p>").text(newArr[i]).attr("id", "p-" + i).appendTo($("#phrase"))
+				$("p-" + i).append("<br/");
+			}
+			// spaceArr = newArr.join("");
+			// console.log(spaceArr);
+		// $("#phrase").text(space);
 	},
 	genBlanks (phrase) {
 		phrase = [];

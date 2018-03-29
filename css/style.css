@@ -30,7 +30,11 @@ body * {
 #phrase {
 	font-size: 30px;
 }
-
+#phrase p {
+	font-size: 36px;
+	display: inline-block;
+	margin-right: 1vw;
+}
 .interactive {
 /*	display: flex;
 */	
