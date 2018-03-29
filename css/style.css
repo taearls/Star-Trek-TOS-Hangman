@@ -34,9 +34,11 @@ body * {
 	font-size: 30px;
 }
 #phrase p {
-	font-size: 36px;
+	font-size: 44px;
 	display: inline-block;
-	margin-right: 1vw;
+	margin-right: 2vw;
+	margin-top: -3vh;
+	margin-bottom: -3vh;
 }
 .interactive {
 /*	display: flex;
